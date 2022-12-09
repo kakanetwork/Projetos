@@ -9,7 +9,6 @@ while c <= 5:
          idadeho = int(input('Informe a sua Idade: '))
          idade1 = idadeho + idade1
          cont1 += 1
-         print(idade1)
     elif sex == 'M':
          idademu = int(input('Informe a sua Idade: '))
          idade2 = idademu + idade2
