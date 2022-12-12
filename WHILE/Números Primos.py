@@ -1,3 +1,6 @@
+
+# Programa que Informa todos os Valores Primos até o Número Informado
+
 valor = int(input('Informe um Número: '))
 if valor > 1:
     aux = 1

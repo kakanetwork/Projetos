@@ -1,3 +1,10 @@
+
+# Programa que Informa se o valor informado pertence aos Números Triangulares
+''' Definição: Números Triangulares são aqueles números que quando colocados em certa ordem, conseguem
+formar um Triângulo!
+Exemplo: 3 = .:.
+'''
+
 num = int(input('Informe um Número: '))
 var = 0
 cont = 1

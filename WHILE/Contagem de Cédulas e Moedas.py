@@ -1,10 +1,11 @@
+from decimal import Decimal
 valor = float(input('Informe o valor a ser sacado: R$'))
 valor1 = valor
 nota = 100
 total = 0
 ced_moe = 'Cédula(s)'
 cents = ''
-soma = 0 # USEI PARA TENTAR SAIR DO PROBLEMA DE VALOR1 == 0, POIS QUANDO CHEGAVA NAS MOEDAS DE 0.01, ELE NÃO CONSIDERAVA VALOR == 0
+soma = 0
 while True:
     if valor1 >= nota:
         total += 1
@@ -12,7 +13,7 @@ while True:
         valor1 -= nota
     else:
         if total > 0:
-            print(f'{total} {ced_moe} de R${nota:.2f} {cents}')
+            print(f'{total} {ced_moe} de R${nota:.2f} {cents} {soma}')
         if nota == 100:
             nota = 50
         elif nota == 50:
@@ -47,5 +48,5 @@ while True:
             cents = 'Centavo(s)'            
             nota = 0.01
         total = 0
-        if valor1 == 0 or soma == valor: # USEI A SOMA DE TODAS AS MOEDAS PARA SAIR DO PROBLEMA Q ESTAVA TENDO AQUI, NEM SEMPRE O VALOR ERA == 0!
-            break # E O WHILE FICAVA EM LOOPING INFINITO, EXISTE OUTRA FORMA DE CONTORNAR ISSO ALÉM DA SOMA QUE UTILIZEI?
+        if valor1 == 0 or soma == valor:
+            break 
