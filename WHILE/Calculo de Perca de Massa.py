@@ -17,8 +17,8 @@ while mf >= 0.5: # Estrutura de Repetição para que o programe pare quando a Ma
 # Calculos do tempo para que se cumpra o objetivo
 hora = (var*50)/3600 
 min = (var*50)/60
-seg = var*50
+seg = (var*50)%60
 
-print(f'\nMassa inicial: {mi}g\nMassa final: {mf:.2f}g') 
-print(f'Tempo em horas: {hora:.2f} Horas\nTempo em Minutos: {min:.2f} Min\nTempo em Segundos {seg:.2f} Seg\n')
+print(f'\nMassa inicial: {mi}g\nMassa final: {mf:.3f}g') 
+print(f'Tempo em horas: {hora:.0f} Horas\nTempo em Minutos: {min:.1f} Min\nTempo em Segundos {seg:.0f} Seg\n')
 

@@ -1,10 +1,9 @@
 
 # ESTE PROGRAMA FAZ A O RETORNO DE UM INVESTIMENTO COM CONTAS DE MÊS A MÊS DURANTE 1 ANO
 ######## SEM UTILIZAR FÓRMULA DE JUROS COMPOSTOS ########
-
-valor = float(input('Insira um valor inicial da aplicação:')) # Informe o valor da aplicação mensal 
-taxa = float(input('Insira o valor de taxa mensal desejado:')) # Informe a Porcentagem de Rendimento Mensal
-
+simb = '%'
+valor = float(input('Insira um valor inicial da aplicação: R$')) # Informe o valor da aplicação mensal 
+taxa = float(input('Insira o valor de taxa mensal desejado: ')) # Informe a Porcentagem de Rendimento Mensal
 porcen = taxa
 invest = valor 
 qtd_mes = 1 # Mês inicial, desconsiderado inicialmente
@@ -27,7 +26,7 @@ if valor and taxa != 0: # Condição onde os valores informados devem ser difere
              if A == 'S':
                 ano += 12 # Se for verdadeira a afirmação ele somara +12 meses ao ano, para repetição do while
                 print(ano)
-                
+
              else:
                 print('Fim da Simulação de Juros Compostos! ')
 else:

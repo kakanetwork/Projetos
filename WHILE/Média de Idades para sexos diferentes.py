@@ -27,3 +27,4 @@ while sex != 'S': # Estrutura de Repetição para que continue a menos que a res
 mediaho = idade1 // cont1 
 mediamu = idade2 // cont2
 print (f'A Média das idades foi > {mediaho} para os Homens e {mediamu} para as Mulheres!')
+print (f'\nA Média geral foi: {(idade1+idade2)/(cont1+cont2)}')

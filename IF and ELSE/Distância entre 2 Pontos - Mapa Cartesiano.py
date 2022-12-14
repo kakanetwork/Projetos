@@ -8,5 +8,5 @@ xb = float(input("\nInforme a Coordenada de B em X: "))
 Dab = (((xb - xa)**2)+((yb - ya)**2))**(1/2) 
 # Utiliza a Seguinte Fórmula: √((Xb - Xa)² + (Yb - Ya)²)
 
-print(f"\nA distância entre os dois pontos é de: {Dab:.2f}")
+print(f"\nA distância entre os pontos {xa, ya} e {xb, yb} é de: {Dab:.2f}")
 # Utiliza a função :.2f para a formatação do número em 2 casas Decimais
