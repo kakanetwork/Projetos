@@ -4,6 +4,7 @@ qnt = len(palavra_chave)
 acertos = 0
 qnterros = 6
 tentativas = ''
+
 while True:
     letra = str(input('\nInforme uma letra [Poderá errar até 6x]: ')).upper()
     repet = tentativas.find(letra)
@@ -19,7 +20,9 @@ while True:
         print(f'\nVocê Errou! tem direito a mais {qnterros-1} erro(s).')
         qnterros -= 1
     tentativas += letra
-    if qnterros == 0 or qnt == 0: break
+    if qnterros == 0 or qnt == 0:
+         break
+
 if qnt == 0:
     print(f'\nPARABÉNS! VOCÊ GANHOU, A PALAVRA ERA: {aux}\n')
 elif qnterros == 0:
