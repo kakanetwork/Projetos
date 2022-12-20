@@ -1,4 +1,3 @@
-
 # Definindo as vogais acentuadas
 vogais = 'aáâeéêiíoóôuú'
 var = str(input('Informe a Palavra na qual deseja encontrar as vogais: '))
@@ -7,19 +6,15 @@ qnt = 0
 cont = 1
 cont1 = 0
 cont2 = 1
-
 # while que repete x vezes, onde x = Todas as possibilidades de vogais
-while cont <= len(vogais):
-
+while cont <= len(var):
         # Retira vogal por vogal e joga a variavél 'caracter'
-        caracter = vogais[cont1:cont2]
-        print(caracter)
+        caracter = var1[cont1:cont2]
         # Verifica se existe caracter na palavra, onde caracter = cada vogal definida
-        find = var1.find(caracter)
+        find = vogais.find(caracter)
         cont += 1
         cont1 += 1
         cont2 += 1
-
         # Find tem resultado diferente de -1 quando encontra o Caracter dentro da Palavra
         if find != -1:
             # Toda vez que ele encontrar o Caracter, vai adicionar +1 na quantidade

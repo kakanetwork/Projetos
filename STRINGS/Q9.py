@@ -24,6 +24,6 @@ while True:
          break
 
 if qnt == 0:
-    print(f'\nPARABÉNS! VOCÊ GANHOU, A PALAVRA ERA: {aux}\n')
+    print(f'\nPARABÉNS! VOCÊ GANHOU, A PALAVRA ERA: {palavra_chave}\n')
 elif qnterros == 0:
     print(f'\nVOCÊ FOI ENFORCADO! Tente Novamente.\n')
