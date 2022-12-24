@@ -1,5 +1,5 @@
 palavra_chave = 'MENINO'
-aux = ''
+aux = palavra_chave
 qnt = len(palavra_chave)
 acertos = 0
 qnterros = 6
@@ -14,16 +14,16 @@ while True:
     elif forca != -1:
         palavra_chave = palavra_chave.replace(letra,'')
         qnt = len(palavra_chave)
-        print(f'\nVocê acertou! faltam {qnt} letras')
+        print(f'\nVocê acertou! faltam -> {qnt} letras')
         acertos += 1
     else:
-        print(f'\nVocê Errou! tem direito a mais {qnterros-1} erro(s).')
+        print(f'\nVocê Errou! tem direito a mais -> {qnterros-1} erro(s).')
         qnterros -= 1
     tentativas += letra
     if qnterros == 0 or qnt == 0:
          break
 
 if qnt == 0:
-    print(f'\nPARABÉNS! VOCÊ GANHOU, A PALAVRA ERA: {palavra_chave}\n')
+    print(f'\nPARABÉNS! VOCÊ GANHOU, A PALAVRA ERA -> {aux}\n')
 elif qnterros == 0:
     print(f'\nVOCÊ FOI ENFORCADO! Tente Novamente.\n')
