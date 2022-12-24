@@ -7,7 +7,6 @@ qnt2 = len(ang2)
 # O anagrama só existe se a quantidade de caracteres das duas palavras forem iguais
 if len(ang1) == qnt2:
     cont = 0
-    # Cont1 = -1 para que dentro do while, ele pegue o ultimo caracter
     cont1 = 1
     cont2 = 1
     cont3 = 1

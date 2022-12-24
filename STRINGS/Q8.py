@@ -3,7 +3,6 @@
 cpf = int(input('\nInforme o seu CPF: '))
 scpf = str(cpf) # CPF convertido para String, será necessário
 qnt = len(scpf)
-
 # Condição para que o CPF só tenha 11 Digitos 
 if qnt == 11:
     posi = 0 # Posi e Posi1 Vai servir para desmembrar o cpf número por número
@@ -13,7 +12,6 @@ if qnt == 11:
     soma = 0 # Vai servir para a soma dos valores após a multiplicação
     dig_1v = 0 # Dig_1v e Dig_2v vai servir para armazenamento dos dois digitos validadores
     dig_2v = 0
-
     while cont1 < qntdig: 
         caracter = scpf[posi] # Realizando o desmembramento do CPF
 
@@ -41,7 +39,6 @@ if qnt == 11:
                 multiplicador = 11 # Agora multiplicador começa em 11, invés de 10
                 soma = 0
                 qntdig = 10 # O contador do while inicia em 10, invés de 9
-
     # Aqui terminamos o calculo dos dois digitos, e verificamos se eles correspondem aos do CPF            
     if str(dig_1v) == scpf[9] and scpf[10] == str(dig_2v):
         print(f'\nO CPF: {cpf} É VÁLIDO!\n')
